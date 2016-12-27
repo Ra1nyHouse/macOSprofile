@@ -1,0 +1,20 @@
+# brew 替换回官方上游
+# 注意 在.bash_profile中也有镜像的配置
+
+cd "$(brew --repo)"
+git remote set-url origin https://github.com/Homebrew/brew
+
+cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+git remote set-url origin https://github.com/Homebrew/homebrew-core
+
+brew update
+
+# brew science替换回官方上游
+
+cd "$(brew --repo)/Library/Taps/homebrew/homebrew-science"
+git remote set-url origin https://github.com/Homebrew/homebrew-science
+
+cd "$(brew --repo)/Library/Taps/homebrew/homebrew-python"
+git remote set-url origin https://github.com/Homebrew/homebrew-python
+
+brew update
