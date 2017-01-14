@@ -17,8 +17,4 @@ git remote set-url origin https://github.com/Homebrew/homebrew-science
 cd "$(brew --repo)/Library/Taps/homebrew/homebrew-python"
 git remote set-url origin https://github.com/Homebrew/homebrew-python
 
-# brew cask
-cd "$(brew --repo)"/Library/Taps/caskroom/homebrew-cask
-git remote set-url origin https://github.com/caskroom/homebrew-cask
-
 brew update
